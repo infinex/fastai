@@ -1,3 +1,8 @@
+if not os.path.exists('data'):
+    os.mkdir('data')
+!wget -P data/ http://files.fast.ai/data/dogscats.zip 
+!7z x -o"data" "data/dogscats.zip" > /dev/null
+
 # fast.ai [![Build Status](https://travis-ci.org/fastai/fastai.svg?branch=master)](https://travis-ci.org/fastai/fastai)
 The fast.ai deep learning library, lessons, and tutorials.
 

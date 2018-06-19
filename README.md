@@ -8,7 +8,7 @@ if not os.path.exists('fastai/weights'):
     os.mkdir('fastai/weights')
     
 !wget -P fastai/weights http://files.fast.ai/models/weights.tgz
-!tar -xvf "fastai/weights/weights.tgz" -P "fastai/weights/" 
+!tar -xvf "fastai/weights/weights.tgz" -C "fastai/weights/"
 ```
 
 # fast.ai [![Build Status](https://travis-ci.org/fastai/fastai.svg?branch=master)](https://travis-ci.org/fastai/fastai)

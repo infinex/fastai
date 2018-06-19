@@ -4,10 +4,11 @@ if not os.path.exists('data'):
 !wget -P data/ http://files.fast.ai/data/dogscats.zip 
 !7z x -o"data" "data/dogscats.zip" > /dev/null
 
-if not os.path.exists('weights'):
-    os.mkdir('weights')
-!wget -P weights/ http://files.fast.ai/models/weights.tgz
-!7z x -o"weights" "weights/weights.tgz" > /dev/null    
+if not os.path.exists('fastai/weights'):
+    os.mkdir('fastai/weights')
+    
+!wget -P fastai/weights http://files.fast.ai/models/weights.tgz
+!tar -xvf "fastai/weights/weights.tgz" -P "fastai/weights/" 
 ```
 
 # fast.ai [![Build Status](https://travis-ci.org/fastai/fastai.svg?branch=master)](https://travis-ci.org/fastai/fastai)
